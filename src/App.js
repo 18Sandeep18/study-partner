@@ -1,25 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Header from './Components/Header';
+import Home from './Components/Home';
+import Dashboard from './Components/Dashboard';
+import Scheduler from './Components/Scheduler';
+import MCQSection from './Components/MCQSection';
+import LoveNotes from './Components/LoveNotes';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+
+const App = () => (
+  <div>
+    <Scheduler/>
+  </div>
+);
 
 export default App;
